@@ -8,7 +8,7 @@ unlock = ["0xf848e3f82c239a50d0d800827e281bf7eaf9af7e"]
 password = ["node.pwds"]
 
 [network]
-port = 30304
+port = 30300
 min_peers = 6
 max_peers = 12
 nat = "any"
@@ -24,7 +24,7 @@ reserved_peers="./reservedPeers.enode"
 reserved_only=false
 
 [rpc]
-port = 8544
+port = 8545
 interface = "all"
 cors=["chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"]
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]

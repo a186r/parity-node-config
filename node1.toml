@@ -7,7 +7,7 @@ unlock = ["0x71be4d6261740d0306da1df97a40f52c7c7e4862"]
 password = ["node.pwds"]
 
 [network]
-port = 30309
+port = 30301
 min_peers = 6
 max_peers = 12
 nat = "any"

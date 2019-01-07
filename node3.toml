@@ -7,7 +7,7 @@ unlock = ["0x84c14aacc5d82fc361996435d49e5f8f54426478"]
 password = ["node.pwds"] #节点parity0密码
 
 [network]
-port = 30311
+port = 30303
 min_peers = 6
 max_peers = 12
 nat = "any"
