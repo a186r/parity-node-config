@@ -7,7 +7,12 @@
         "validators": {
           "multi": {
             "0": {
-              "list": [""]
+              "list": [
+                "0xfc04c8c22961aa43cffaba9880aa105c55ea7069",
+                "0x08d78fe86447939dd54cb41de2b8212e141774b5",
+                "0x55aaee02cf35405cc933118e2e4bb7aa54db7a07",
+                "0x91f4385a5ba8f6976b0fd11d4619378d35e8196a"
+              ]
             }
           }
         },

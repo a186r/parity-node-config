@@ -3,7 +3,7 @@ chain = "aura.json"
 base_path = "node1"
 
 [account]
-unlock = ["0x71be4d6261740d0306da1df97a40f52c7c7e4862"]
+unlock = ["0x08d78fe86447939dd54cb41de2b8212e141774b5"]
 password = ["node.pwds"]
 
 [network]
@@ -42,8 +42,8 @@ path = "$HOME/.local/share/io.parity.ethereum/jsonrpc.ipc"
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub"]
 
 [mining]
-author = "0x71be4d6261740d0306da1df97a40f52c7c7e4862"
-engine_signer = "0x71be4d6261740d0306da1df97a40f52c7c7e4862"
+author = "0x08d78fe86447939dd54cb41de2b8212e141774b5"
+engine_signer = "0x08d78fe86447939dd54cb41de2b8212e141774b5"
 notify_work = ["http://localhost:3002"]
 gas_cap = "6283184"
 tx_gas_limit = "6283184"

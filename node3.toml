@@ -3,8 +3,8 @@ chain = "aura.json"
 base_path = "node3"
 
 [account]
-unlock = ["0x84c14aacc5d82fc361996435d49e5f8f54426478"]
-password = ["node.pwds"] #节点parity0密码
+unlock = ["0x91f4385a5ba8f6976b0fd11d4619378d35e8196a"]
+password = ["node.pwds"]
 
 [network]
 port = 30303
@@ -43,8 +43,8 @@ path = "$HOME/.local/share/io.parity.ethereum/jsonrpc.ipc"
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub"]
 
 [mining]
-author = "0x84c14aacc5d82fc361996435d49e5f8f54426478"
-engine_signer = "0x84c14aacc5d82fc361996435d49e5f8f54426478"
+author = "0x91f4385a5ba8f6976b0fd11d4619378d35e8196a"
+engine_signer = "0x91f4385a5ba8f6976b0fd11d4619378d35e8196a"
 notify_work = ["http://localhost:3004"]
 gas_cap = "6283184"
 tx_gas_limit = "6283184"
