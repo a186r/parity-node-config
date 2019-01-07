@@ -26,7 +26,7 @@ reserved_only=false
 [rpc]
 port = 8545
 interface = "all"
-cors=["chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"]
+cors=["*"]
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]
 hosts = ["all"]
 
