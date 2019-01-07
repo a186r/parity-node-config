@@ -1,23 +1,52 @@
 [parity]
-chain = "demo-spec.json"
-base_path = "/tmp/parity2"
-[network]
-port = 30302
-[rpc]
-port = 8542
-apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
-hosts = ["all"]
-interface = "all"
-[ui]
-port = 8182
-interface = "all"
-[websockets]
-port = 8452
-interface = "all"
-[ipc]
-disable = true
+chain = "demo.json"
+base_path = "parity2"
+
 [account]
+unlock = ["0xda1e1cf8bbc40ffedf7c1a3f0952be541cc62f97"]
 password = ["node.pwds"]
-#[mining]
-#engine_signer = "0x00Aa39d30F0D20FF03a22cCfc30B7EfbFca597C2"
-#reseal_on_txs = "none"
+
+[network]
+port = 30308
+min_peers = 6
+max_peers = 12
+nat = "any"
+id = 6652
+bootnodes = []
+discovery = true
+warp = true
+allow_ips = "all"
+snapshot_peers = 0
+max_pending_peers = 64
+no_serve_light = false
+reserved_peers="./reservedPeers.enode"
+reserved_only=false
+
+[rpc]
+port = 8545
+interface = "all"
+cors=["chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"]
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]
+hosts = ["all"]
+
+[websockets]
+disable = false
+port = 8179
+interface = "127.0.0.1"
+origins = ["none"]
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]
+hosts = ["all"]
+
+[ipc]
+disable = false
+path = "$HOME/.local/share/io.parity.ethereum/jsonrpc.ipc"
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub"]
+
+[mining]
+author = "0xda1e1cf8bbc40ffedf7c1a3f0952be541cc62f97"
+engine_signer = "0xda1e1cf8bbc40ffedf7c1a3f0952be541cc62f97"
+notify_work = ["http://localhost:3003"]
+gas_cap = "6283184"
+tx_gas_limit = "6283184"
+force_sealing = true
+reseal_on_txs = "all"

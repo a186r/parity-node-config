@@ -1,14 +1,13 @@
 [parity]
 chain = "demo.json"
-base_path = "parity0"
+base_path = "parity3"
 
 [account]
-
-unlock = ["0xf848e3f82c239a50d0d800827e281bf7eaf9af7e"]
-password = ["node.pwds"]
+unlock = ["0x84c14aacc5d82fc361996435d49e5f8f54426478"]
+password = ["node.pwds"] #节点parity0密码
 
 [network]
-port = 30304
+port = 30311
 min_peers = 6
 max_peers = 12
 nat = "any"
@@ -24,15 +23,16 @@ reserved_peers="./reservedPeers.enode"
 reserved_only=false
 
 [rpc]
-port = 8544
+port = 8548
 interface = "all"
 cors=["chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"]
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]
 hosts = ["all"]
 
 [websockets]
-port = 8180
-interface = "all"
+disable = false
+port = 8178
+interface = "127.0.0.1"
 origins = ["none"]
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]
 hosts = ["all"]
@@ -43,9 +43,10 @@ path = "$HOME/.local/share/io.parity.ethereum/jsonrpc.ipc"
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub"]
 
 [mining]
-author = "0xf848e3f82c239a50d0d800827e281bf7eaf9af7e"
-engine_signer = "0xf848e3f82c239a50d0d800827e281bf7eaf9af7e"
-notify_work = ["http://localhost:3001"]
+author = "0x84c14aacc5d82fc361996435d49e5f8f54426478"
+engine_signer = "0x84c14aacc5d82fc361996435d49e5f8f54426478"
+notify_work = ["http://localhost:3004"]
+gas_cap = "6283184"
+tx_gas_limit = "6283184"
 force_sealing = true
 reseal_on_txs = "all"
-

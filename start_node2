@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/aewalle/parity/parity-ethereum-2.1.9/target/release/parity --config ./node2.toml --jsonrpc-cors "chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"
