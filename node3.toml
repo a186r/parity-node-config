@@ -1,6 +1,6 @@
 [parity]
-chain = "demo.json"
-base_path = "parity3"
+chain = "aura.json"
+base_path = "node3"
 
 [account]
 unlock = ["0x84c14aacc5d82fc361996435d49e5f8f54426478"]
