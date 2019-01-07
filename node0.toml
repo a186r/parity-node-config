@@ -44,9 +44,6 @@ apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accou
 [mining]
 author = "0xfc04c8c22961aa43cffaba9880aa105c55ea7069"
 engine_signer = "0xfc04c8c22961aa43cffaba9880aa105c55ea7069"
-notify_work = ["http://localhost:3001"]
 force_sealing = true
 reseal_on_txs = "none"
-gas_cap = "6283184"
-tx_gas_limit = "6283184"
 
