@@ -20,7 +20,7 @@ snapshot_peers = 0
 max_pending_peers = 64
 no_serve_light = false
 reserved_peers="./reservedPeers.enode"
-reserved_only=false
+reserved_only=true
 
 [rpc]
 port = 8546
@@ -48,4 +48,4 @@ notify_work = ["http://localhost:3002"]
 gas_cap = "6283184"
 tx_gas_limit = "6283184"
 force_sealing = true
-reseal_on_txs = "all"
+reseal_on_txs = "none"

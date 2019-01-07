@@ -1,2 +1,0 @@
-#!/bin/bash
-/datadrive/blockchain/parity/parity-ethereum-2.1.10/target/release/parity --config ./node0.toml --jsonrpc-cors '*'
