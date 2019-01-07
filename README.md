@@ -3,7 +3,9 @@
 2. 为账户预设余额
 3. nodex.toml中设置为engine_signer和author
 4. 在nodex.toml中unlock该账户
-5. 启动节点 ./start_nodex `/datadrive/blockchain/parity/parity-ethereum-2.1.10/target/release/parity --config ./node0.toml --jsonrpc-cors "*" -lsync=trace --no-warp`
+5. 启动节点 ./start_nodex 
+
+    `/datadrive/blockchain/parity/parity-ethereum-2.1.10/target/release/parity --config ./node0.toml --jsonrpc-cors "*" -lsync=trace --no-warp`
 
 ### 注意事项
 #### 从源码编译 
