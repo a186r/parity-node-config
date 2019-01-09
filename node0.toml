@@ -16,7 +16,6 @@ bootnodes = []
 discovery = true
 warp = true
 allow_ips = "all"
-snapshot_peers = 0
 max_pending_peers = 64
 no_serve_light = false
 reserved_peers="./reservedPeers.enode"
