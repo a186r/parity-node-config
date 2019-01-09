@@ -26,7 +26,6 @@
     "maximumExtraDataSize": "0x20",
     "minGasLimit": "0x1388",
     "networkID": "6652",
-    "chainID": "6652",
     "eip155Transition": 0,
     "validateChainIdTransition": 0,
     "eip140Transition": 0,
